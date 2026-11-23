@@ -2,8 +2,8 @@
 <h3>AIM:</h3>
 <h3>MIDHUN S</h3>
 <h3>212224230158</h3>
-<h3>EX. NO</h3>
-<h3>DATE</h3>
+<h3>EX. NO 3</h3>
+<h3>23/11/2026</h3>
 <h1> <align=center> Sobel edge detection filter using CUDA </h3>
   Implement Sobel edge detection filtern using GPU.</h3>
 Experiment Details:
@@ -43,7 +43,7 @@ TYPE YOUR CODE HERE
 
 
 ## RESULT:
-Thus the program has been executed by using CUDA to ________________.
+Thus the program has been executed by using CUDA to perform edge detection on an image using the Sobel filter.
 
 Questions:
 
