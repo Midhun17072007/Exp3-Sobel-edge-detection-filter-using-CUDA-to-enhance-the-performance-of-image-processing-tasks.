@@ -39,7 +39,8 @@ Discuss the differences in execution time and output quality.
 TYPE YOUR CODE HERE
 
 ## OUTPUT:
-SHOW YOUR OUTPUT HERE
+<img width="577" height="405" alt="image" src="https://github.com/user-attachments/assets/b2b8dc59-8129-470d-8c26-b279e5540ac9" />
+
 
 ## RESULT:
 Thus the program has been executed by using CUDA to ________________.
