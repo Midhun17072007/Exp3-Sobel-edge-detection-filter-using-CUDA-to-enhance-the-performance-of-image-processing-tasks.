@@ -152,6 +152,7 @@ int main() {
 
     return 0;
 }
+```
 ## OUTPUT:
 <img width="577" height="405" alt="image" src="https://github.com/user-attachments/assets/b2b8dc59-8129-470d-8c26-b279e5540ac9" />
 
