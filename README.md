@@ -159,14 +159,41 @@ int main() {
 
 
 ## RESULT:
-Thus the program has been executed by using CUDA to perform edge detection on an image using the Sobel filter.
+Thus the program has been executed by using CUDA to ____Total time taken: 0.127847 milliseconds____
 
 Questions:
+1. What challenges did you face while implementing the Sobel filter for color images?
+```
+- Color conversion: Converting RGB images into grayscale before applying the Sobel filter.
+- Edge detection: Applying Sobel X and Y kernels correctly to detect edges.
+- Boundary pixels: Handling image borders without accessing invalid memory.
+- GPU memory: Managing data transfer between CPU and GPU.
+```
+2. How did changing the block size influence CUDA performance?
+```
+- Small block size: May increase overhead and reduce GPU utilization.
+- Large block size: Can improve parallel processing but may consume more GPU resources.
+- Optimal block size: Common choices like 128 or 256 threads per block can provide good performance, depending on the GPU.
+- Result: Choosing a suitable block size improves execution speed.
+```
+3. What were the differences in output between CUDA and CPU implementations? Discuss discrepancies.
+```
+- Both implementations should produce nearly identical edge-detected images.
+- CUDA uses GPU parallel processing, while CPU uses sequential or CPU-parallel processing.
+- Small pixel differences may occur due to rounding and floating-point calculations.
+- Incorrect boundary handling or kernel calculations can cause larger differences.
+- Result: CUDA can produce the same output faster, especially for large images.
+```
 
-What challenges did you face while implementing the Sobel filter for color images?
-How did changing the block size influence the performance of your CUDA implementation?
-What were the differences in output between the CUDA and CPU implementations? Discuss any discrepancies.
-Suggest potential optimizations for improving the performance of the Sobel filter.
+4. Suggest potential optimizations for improving Sobel filter performance.
+```
+1. Shared memory: Store nearby pixels to reduce global memory access.
+2. Optimize block size: Test different thread configurations.
+3. Coalesced memory access: Arrange memory access efficiently.
+4. Reduce data transfers: Minimize CPU-to-GPU communication.
+5. Combine operations: Perform grayscale conversion and Sobel filtering efficiently in a single processing pipeline.
+```
+
 
 Deliverables:
 
@@ -174,4 +201,3 @@ Modified CUDA code with comments explaining your changes.
 A report summarizing your findings, including graphs of execution times and a comparison of outputs.
 Answers to the questions posed in the experiment.
 Tools Required:
-
